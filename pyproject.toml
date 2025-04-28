@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "app"
+version = "1.0.0"
+description = ""
+authors = ["Vadim M."]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+python-dotenv = "^1.1.0"
+sqlalchemy = "^2.0.40"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pyjwt = "^2.10.1"
+python-multipart = "^0.0.20"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
